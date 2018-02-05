@@ -4,7 +4,7 @@ You can use the [editor on GitHub](https://github.com/tetsukayama/tetsukayama.gi
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-![Image](blob/master/_images/11531636.png)
+![Image](https://raw.githubusercontent.com/tetsukayama/tetsukayama.github.io/master/_images/11531636.png)
 <section>
   <div class="container">
     <div class="row">
