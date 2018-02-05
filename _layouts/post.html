@@ -1,6 +1,16 @@
---- layout: default ---
-{{ page.title | escape }}
-{% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %} {{ page.date | date: date_format }} {% if page.author %} • {{ page.author }} {% endif %}
+---
+layout: default
+---
+<section class="bg-dark">
+  <div class="text-center">
+    <h1>{{ page.title }}</h1>
+  </div>
+</section>
 
-{{ content }}
-{% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
+<section id="contact">
+  <div class="container">
+    <div class="col-md-6 col-md-offset-3">
+      {{ content }}
+    </div>
+  </div>
+</section>
