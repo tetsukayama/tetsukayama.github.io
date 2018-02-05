@@ -4,6 +4,23 @@ You can use the [editor on GitHub](https://github.com/tetsukayama/tetsukayama.gi
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="text-center">
+        <ul style="list-style-position: inside">
+           {% for post in site.posts %}
+             <li>
+               <a href="{{ post.url }}">{{ post.title }}</a>
+               - {{ post.date | date: "%d %B %Y" }}
+             </li>
+           {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
