@@ -21,7 +21,9 @@ layout: default
           &nbsp;<span class="post-meta">({{ post.date | date: date_format }})</span>
         </a>
           {{ post.excerpt }}
-        <a style="text-align:right; margin-top:-10px; margin-bottom:-10px;" href="{{ post.url | relative_url }}">…（全文をよむ）</a>
+        <div style="text-align:right; margin-top:-10px; margin-bottom:-10px;">
+          <a href="{{ post.url | relative_url }}">…（全文をよむ）</a>
+         </div>
       </li>
       {% endfor %}
     </ul>
