@@ -18,9 +18,10 @@ layout: default
         <a class="post-link" href="{{ post.url | relative_url }}">
           <img src="https://raw.githubusercontent.com/tetsukayama/tetsukayama.github.io/master/_images/aaa.gif">
             {{ post.title | escape }}
-          &nbsp<span class="post-meta">({{ post.date | date: date_format }})</span>
+          &nbsp;<span class="post-meta">({{ post.date | date: date_format }})</span>
         </a>
           {{ post.excerpt }}
+        <a class="post-link" href="{{ post.url | relative_url }}">…（全文をよむ）</a>
       </li>
       {% endfor %}
     </ul>
