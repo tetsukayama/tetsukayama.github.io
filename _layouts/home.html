@@ -15,8 +15,8 @@ layout: default
       <li>
         {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
-        ![Image](https://raw.githubusercontent.com/tetsukayama/tetsukayama.github.io/master/_images/aaa.gif)
         <a class="post-link" href="{{ post.url | relative_url }}">
+          <img src="https://raw.githubusercontent.com/tetsukayama/tetsukayama.github.io/master/_images/aaa.gif">
             {{ post.title | escape }}
         </a>
           {{ post.excerpt }}
