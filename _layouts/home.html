@@ -11,42 +11,12 @@ layout: default
   </div>
   {{ content }}
   <div style="clear:both;"></div><br><hr><br>
-  {% if site.posts.size > 0 %}
-    <ul class="post-list">
-      {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          <img src="https://raw.githubusercontent.com/tetsukayama/tetsukayama.github.io/master/_images/aaa.gif">
-            {{ post.title | escape }}
-          &nbsp;<span class="post-meta">({{ post.date | date: date_format }})</span>
-        </a>
-          {{ post.excerpt }}
-        <div style="text-align:right; margin-top:-10px; margin-bottom:-10px;">
-          <a href="{{ post.url | relative_url }}">…（全文をよむ）</a>
-         </div>
-      </li>
-      {% endfor %}
-    </ul>
-
-  {% endif %}
-</div> 
-
-
-  
-  
+    
 <!-- Just some nice to have styles for the pager buttons -->
 <style>
   ul.pager { text-align: center; list-style: none; }
   ul.pager li {display: inline;border: 1px solid black; padding: 10px; margin: 5px;}
 </style>
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
 
   <ul class="post-list">
     <!-- 
@@ -57,12 +27,19 @@ layout: default
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          <img src="https://raw.githubusercontent.com/tetsukayama/tetsukayama.github.io/master/_images/aaa.gif">
+          {{ post.title | escape }}
+          &nbsp;<span class="post-meta">({{ post.date | date: date_format }})</span>
+        </a>
+          {{ post.excerpt }}
+        <div style="text-align:right; margin-top:-10px; margin-bottom:-10px;">
+          <a href="{{ post.url | relative_url }}">…（全文をよむ）</a>
+         </div>
       </li>
     {% endfor %}
   </ul>
+</div> 
   
   <!-- 
     Showing buttons to move to the next and to the previous list of posts (pager buttons).
