@@ -3,3 +3,4 @@ theme: minima
 title: Tetsu Kayama  daily report
 author: kayamatetsu
 email: mail@kayamatetsu.com
+paginate: 4
