@@ -1,6 +1,37 @@
 ---
 layout: default
 ---
+<div class="home">
+  {% if page.title %}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {% endif %}
+  
+  <div style="float:left; margin-right:10px;">
+    <img src="https://raw.githubusercontent.com/tetsukayama/tetsukayama.github.io/master/_images/11531636.png">
+  </div>
+  {{ content }}
+  <div style="clear:both;"></div><br><hr><br>
+  {% if site.posts.size > 0 %}
+    <ul class="post-list">
+      {% for post in site.posts %}
+      <li>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          <img src="https://raw.githubusercontent.com/tetsukayama/tetsukayama.github.io/master/_images/aaa.gif">
+            {{ post.title | escape }}
+          &nbsp;<span class="post-meta">({{ post.date | date: date_format }})</span>
+        </a>
+          {{ post.excerpt }}
+        <div style="text-align:right; margin-top:-10px; margin-bottom:-10px;">
+          <a href="{{ post.url | relative_url }}">…（全文をよむ）</a>
+         </div>
+      </li>
+      {% endfor %}
+    </ul>
+
+  {% endif %}
+</div> 
 
 
   
