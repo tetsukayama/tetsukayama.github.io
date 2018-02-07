@@ -20,7 +20,7 @@ paginate_path: "blog/page:num"
 # Pagination Settings
 pagination:
   enabled: true
-  per_page: 3
+  per_page: ４
   permalink: '/page/:num/'
   title: ':title - page :num of :max'
   limit: 0
