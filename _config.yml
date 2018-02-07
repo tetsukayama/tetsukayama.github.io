@@ -14,7 +14,7 @@ exclude:
 permalink: /:year/:month/:title.html
 
 # Explicitly turn off the old code
-paginate: 3
+paginate: ４
 paginate_path: "blog/page:num"
 
 # Pagination Settings
