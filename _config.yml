@@ -14,7 +14,7 @@ exclude:
 permalink: /:year/:month/:title.html
 
 # Explicitly turn off the old code
-paginate: nil
+paginate: 3
 paginate_path: nil
 
 # Pagination Settings
