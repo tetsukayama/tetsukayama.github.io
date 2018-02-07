@@ -4,3 +4,5 @@ title: Tetsu Kayama  daily report
 author: kayamatetsu
 email: mail@kayamatetsu.com
 paginate: 4
+pagination: 
+  enabled: true
