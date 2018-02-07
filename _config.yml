@@ -6,6 +6,9 @@ email: mail@kayamatetsu.com
 
 gems:
   - jekyll-paginate-v2
+exclude:
+  - Gemfile
+  - Gemfile.lock
   
 # Produces a cleaner folder structure when using categories
 permalink: /:year/:month/:title.html
