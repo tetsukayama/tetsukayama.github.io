@@ -14,13 +14,13 @@ exclude:
 permalink: /:year/:month/:day/:title.html
 
 # Explicitly turn off the old code
-paginate: 4
+paginate: 8
 paginate_path: "page/page:num"
 
 # Pagination Settings
 pagination:
   enabled: true
-  per_page: 4
+  per_page: 8
   permalink: '/page/:num/'
   title: ':title - page :num of :max'
   limit: 0
